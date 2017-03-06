@@ -10,7 +10,7 @@ import Foundation
 
 class GroceryListsViewModel: ViewModel {
     var groceryLists: [GroceryList] {
-        return dataContainer?.data ?? []
+        return fetch() ?? []
     }
     
     func groceryList(at indexPath: IndexPath) -> (name: String?, itemCount: Int) {

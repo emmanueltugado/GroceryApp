@@ -23,6 +23,10 @@
 		B17C8D8B1E6BB00E0090BAC4 /* GAConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C8D8A1E6BB00E0090BAC4 /* GAConstants.swift */; };
 		B17C8D8D1E6BB58A0090BAC4 /* SelectedGroceryListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C8D8C1E6BB58A0090BAC4 /* SelectedGroceryListContainer.swift */; };
 		B1F003CD1E6DB94B00152AD5 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F003CC1E6DB94B00152AD5 /* PersistentContainer.swift */; };
+		B1F003E21E6DBDE400152AD5 /* GroceryList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F003DE1E6DBDE400152AD5 /* GroceryList+CoreDataClass.swift */; };
+		B1F003E31E6DBDE400152AD5 /* GroceryList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F003DF1E6DBDE400152AD5 /* GroceryList+CoreDataProperties.swift */; };
+		B1F003E41E6DBDE400152AD5 /* GroceryItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F003E01E6DBDE400152AD5 /* GroceryItem+CoreDataClass.swift */; };
+		B1F003E51E6DBDE400152AD5 /* GroceryItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F003E11E6DBDE400152AD5 /* GroceryItem+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		B17C8D8A1E6BB00E0090BAC4 /* GAConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAConstants.swift; sourceTree = "<group>"; };
 		B17C8D8C1E6BB58A0090BAC4 /* SelectedGroceryListContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedGroceryListContainer.swift; sourceTree = "<group>"; };
 		B1F003CC1E6DB94B00152AD5 /* PersistentContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
+		B1F003DE1E6DBDE400152AD5 /* GroceryList+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GroceryList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B1F003DF1E6DBDE400152AD5 /* GroceryList+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GroceryList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B1F003E01E6DBDE400152AD5 /* GroceryItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GroceryItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B1F003E11E6DBDE400152AD5 /* GroceryItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GroceryItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,10 @@
 		B17C8D751E6B9EC90090BAC4 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				B1F003DE1E6DBDE400152AD5 /* GroceryList+CoreDataClass.swift */,
+				B1F003DF1E6DBDE400152AD5 /* GroceryList+CoreDataProperties.swift */,
+				B1F003E01E6DBDE400152AD5 /* GroceryItem+CoreDataClass.swift */,
+				B1F003E11E6DBDE400152AD5 /* GroceryItem+CoreDataProperties.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -274,11 +286,15 @@
 				B17C8D821E6BA5D40090BAC4 /* GroceryListsViewController.swift in Sources */,
 				B17C8D771E6BA0300090BAC4 /* ViewModel.swift in Sources */,
 				B17C8D891E6BAEA10090BAC4 /* GroceryItemsViewController.swift in Sources */,
+				B1F003E31E6DBDE400152AD5 /* GroceryList+CoreDataProperties.swift in Sources */,
+				B1F003E51E6DBDE400152AD5 /* GroceryItem+CoreDataProperties.swift in Sources */,
 				B17C8D8B1E6BB00E0090BAC4 /* GAConstants.swift in Sources */,
 				B17C8D871E6BAD620090BAC4 /* GroceryItemsViewModel.swift in Sources */,
 				B17C8D841E6BA7CA0090BAC4 /* ViewModelContainer.swift in Sources */,
 				B1F003CD1E6DB94B00152AD5 /* PersistentContainer.swift in Sources */,
 				B17C8D511E68F6AA0090BAC4 /* AppDelegate.swift in Sources */,
+				B1F003E21E6DBDE400152AD5 /* GroceryList+CoreDataClass.swift in Sources */,
+				B1F003E41E6DBDE400152AD5 /* GroceryItem+CoreDataClass.swift in Sources */,
 				B17C8D7D1E6BA2810090BAC4 /* Array+Extensions.swift in Sources */,
 				B17C8D8D1E6BB58A0090BAC4 /* SelectedGroceryListContainer.swift in Sources */,
 				B17C8D591E68F6AB0090BAC4 /* GroceryApp.xcdatamodeld in Sources */,

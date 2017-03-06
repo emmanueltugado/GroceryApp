@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PersistentContainer {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if let entity = NSEntityDescription.entity(forEntityName: "GroceryList", in:
+            persistentContainer.viewContext) {
+            let list = GroceryList(entity: entity, insertInto: persistentContainer.viewContext)
+            list.name = "Real List #1"
+            saveContext()
+        }
+        
         return true
     }
 
