@@ -14,4 +14,8 @@ struct GAConstants {
         // Cell Identifier for our the grocery list and grocery item table views
         static let rightDetail = "Cell"
     }
+    
+    struct Entities {
+        static let groceryList = "GroceryList"
+    }
 }

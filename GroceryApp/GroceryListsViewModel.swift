@@ -8,6 +8,10 @@
 
 import Foundation
 
+enum GroceryDataError: Error {
+    case Saving(String)
+}
+
 class GroceryListsViewModel: ViewModel {
     var groceryLists: [GroceryList] {
         return fetch() ?? []
@@ -20,5 +24,16 @@ class GroceryListsViewModel: ViewModel {
     
     func transferGroceryList(at indexPath: IndexPath, to container: inout SelectedGroceryListContainer) {
         container.selectedGroceryList = groceryLists.value(at: indexPath.row)
+    }
+    
+    func createGroceryList(with name: String?) throws {
+        guard name?.isEmpty == false,
+            let newList = GroceryList(managedObjectContext: managedObjectContext)
+        else {
+            throw GroceryDataError.Saving("There was an error creating new grocery list \(name)")
+        }
+        
+        newList.name = name
+        try save()
     }
 }

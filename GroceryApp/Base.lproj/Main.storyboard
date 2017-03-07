@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="1134.375" y="138.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Grocery List View Controller-->
         <scene sceneID="d3C-1u-DAK">
             <objects>
-                <viewController id="wN1-Ph-MtD" sceneMemberID="viewController">
+                <viewController id="wN1-Ph-MtD" customClass="AddGroceryListViewController" customModule="GroceryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2dT-rm-LQN"/>
                         <viewControllerLayoutGuide type="bottom" id="GWG-t3-Xrg"/>
@@ -122,6 +122,9 @@
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="dismiss:" destination="wN1-Ph-MtD" eventType="touchUpInside" id="B0O-Hd-CXi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxt-SH-Cl7">
                                         <rect key="frame" x="160" y="0.0" width="128" height="30"/>
@@ -129,6 +132,9 @@
                                         <state key="normal" title="Add List">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addList:" destination="wN1-Ph-MtD" eventType="touchUpInside" id="V7q-Hp-vXl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -144,6 +150,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="KbR-QW-6JH" secondAttribute="trailing" id="tao-mk-tgI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="groceryListName" destination="4eP-64-zqq" id="TKV-fr-b3h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E6X-j4-exP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -220,7 +229,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CSS-Sx-qW7" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="5A4-eQ-aTi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="5A4-eQ-aTi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

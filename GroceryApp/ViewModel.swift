@@ -38,4 +38,8 @@ class ViewModel {
         
         return result
     }
+    
+    func save() throws {
+        try managedObjectContext?.save()
+    }
 }

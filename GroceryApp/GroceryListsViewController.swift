@@ -14,6 +14,11 @@ class GroceryListsViewController: UIViewController, UITableViewDataSource, UITab
     
     var viewModel: GroceryListsViewModel = GroceryListsViewModel()
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        groceryListTableView?.reloadData()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         
